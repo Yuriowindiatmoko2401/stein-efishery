@@ -98,8 +98,5 @@ def extract():
 
 	results = results[results['min_price'].notna()].reset_index(drop=True)
 
-	# print(results.to_csv(index=False))
 	return results.to_csv(index=False)
 
-# if __name__ == '__main__':
-# 	extract()
